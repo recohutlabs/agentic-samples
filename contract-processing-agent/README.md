@@ -4,6 +4,8 @@ Python reference implementation for fictional service and employment contracts. 
 
 This is a development sample, not legal advice, signature authentication or a production contract system. A second model pass does not guarantee accuracy.
 
+Companion article: [A Second Model Pass Is Not a Contract Accuracy Guarantee](https://medium.com/recohut-ai-labs/a-second-model-pass-is-not-a-contract-accuracy-guarantee-2e93729eaa63).
+
 ## Setup and CLI
 
 Requires Python 3.11+ and [uv](https://docs.astral.sh/uv/). From this sample directory:
