@@ -1,0 +1,1 @@
+Each sample should run independently, keep credentials in environment configuration, use fictional/publicly licensed fixtures, document limits, and include focused tests. Add a link in the root index. Do not commit databases, uploads, credentials or internal operational metadata.

@@ -1,0 +1,1 @@
+Do not use real sensitive contracts with this sample without your own authorization and security controls. Report a suspected vulnerability privately using the repository owner contact on GitHub; do not post credentials or private documents in public issues.

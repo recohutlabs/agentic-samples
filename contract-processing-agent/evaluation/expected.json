@@ -1,0 +1,772 @@
+{
+  "suite_version": 1,
+  "scope": "Selected source-grounded business-critical fields, not exhaustive semantic scoring of every text field. One live trial per contract.",
+  "cases": [
+    {
+      "id": "FAC-001",
+      "pdf": "data/FAC-001-cleaning.pdf",
+      "contract_type": "service_agreement",
+      "checks": [
+        {
+          "path": "contract_id",
+          "expected": "FAC-001",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "customer",
+          "expected": "Cedar Retail Pvt Ltd",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "vendor",
+          "expected": "BrightBroom Integrated Services Pvt Ltd",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "start_date",
+          "expected": "2024-12-01",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "end_date",
+          "expected": "2026-11-30",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "fees_and_pricing.currency",
+          "expected": "INR",
+          "source_page": 5,
+          "op": "equals"
+        },
+        {
+          "path": "execution_status.status",
+          "expected": "unclear",
+          "source_page": 8,
+          "op": "equals"
+        },
+        {
+          "path": "execution_status.signing_date",
+          "expected": null,
+          "source_page": 8,
+          "op": "equals"
+        },
+        {
+          "path": "liability_and_indemnity.cap_amount",
+          "expected": null,
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "liability_and_indemnity.cap_multiplier",
+          "expected": "2",
+          "source_page": 7,
+          "op": "money"
+        },
+        {
+          "path": "liability_and_indemnity.lookback_months",
+          "expected": 12,
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "assignment_and_subcontracting.assignment_allowed",
+          "expected": null,
+          "source_page": 4,
+          "op": "equals"
+        },
+        {
+          "path": "assignment_and_subcontracting.subcontracting_allowed",
+          "expected": true,
+          "source_page": 4,
+          "op": "equals"
+        },
+        {
+          "path": "assignment_and_subcontracting.consent_required",
+          "expected": true,
+          "source_page": 4,
+          "op": "equals"
+        },
+        {
+          "path": "fees_and_pricing.stated_total",
+          "expected": null,
+          "source_page": 5,
+          "op": "equals"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": "5820000",
+          "source_page": 5,
+          "op": "has_amount"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": "7263000",
+          "source_page": 5,
+          "op": "has_amount"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": "120000",
+          "source_page": 5,
+          "op": "has_amount"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": "18500",
+          "source_page": 5,
+          "op": "has_amount"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": [
+            "32000",
+            "1152000",
+            "95000"
+          ],
+          "source_page": 5,
+          "op": "no_amounts"
+        },
+        {
+          "path": "payment_terms.due_in_days",
+          "expected": 30,
+          "source_page": 5,
+          "op": "equals"
+        },
+        {
+          "path": "payment_terms.day_basis",
+          "expected": "calendar",
+          "source_page": 5,
+          "op": "equals"
+        },
+        {
+          "path": "renewal_terms.renewal_type",
+          "expected": "automatic",
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "renewal_terms.renewal_period",
+          "expected": 12,
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "renewal_terms.period_unit",
+          "expected": "months",
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "renewal_terms.non_renewal_notice_days",
+          "expected": 60,
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "renewal_terms.maximum_renewals",
+          "expected": null,
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "amendments.0.amendment_date",
+          "expected": "2025-11-15",
+          "source_page": 8,
+          "op": "equals"
+        },
+        {
+          "path": "amendments.0.effective_date",
+          "expected": "2025-12-01",
+          "source_page": 8,
+          "op": "equals"
+        }
+      ]
+    },
+    {
+      "id": "FAC-003",
+      "pdf": "data/FAC-003-hvac.pdf",
+      "contract_type": "service_agreement",
+      "checks": [
+        {
+          "path": "contract_id",
+          "expected": "FAC-003",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "customer",
+          "expected": "Cedar Retail Pvt Ltd",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "vendor",
+          "expected": "CoolCurrent Building Systems India Pvt Ltd",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "start_date",
+          "expected": "2026-01-01",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "end_date",
+          "expected": "2028-12-31",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "fees_and_pricing.currency",
+          "expected": "INR",
+          "source_page": 5,
+          "op": "equals"
+        },
+        {
+          "path": "execution_status.status",
+          "expected": "unclear",
+          "source_page": 8,
+          "op": "equals"
+        },
+        {
+          "path": "execution_status.signing_date",
+          "expected": null,
+          "source_page": 8,
+          "op": "equals"
+        },
+        {
+          "path": "liability_and_indemnity.cap_amount",
+          "expected": null,
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "liability_and_indemnity.cap_multiplier",
+          "expected": "2",
+          "source_page": 7,
+          "op": "money"
+        },
+        {
+          "path": "liability_and_indemnity.lookback_months",
+          "expected": 12,
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "assignment_and_subcontracting.assignment_allowed",
+          "expected": null,
+          "source_page": 4,
+          "op": "equals"
+        },
+        {
+          "path": "assignment_and_subcontracting.subcontracting_allowed",
+          "expected": true,
+          "source_page": 4,
+          "op": "equals"
+        },
+        {
+          "path": "assignment_and_subcontracting.consent_required",
+          "expected": true,
+          "source_page": 4,
+          "op": "equals"
+        },
+        {
+          "path": "fees_and_pricing.stated_total",
+          "expected": null,
+          "source_page": 5,
+          "op": "equals"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": "4170000",
+          "source_page": 5,
+          "op": "has_amount"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": "4538400",
+          "source_page": 5,
+          "op": "has_amount"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": "4703136",
+          "source_page": 5,
+          "op": "has_amount"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": "300000",
+          "source_page": 5,
+          "op": "has_amount"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": "12000",
+          "source_page": 5,
+          "op": "has_amount"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": [
+            "210000",
+            "420000"
+          ],
+          "source_page": 8,
+          "op": "no_amounts"
+        },
+        {
+          "path": "payment_terms.payment_type",
+          "expected": "advance",
+          "source_page": 5,
+          "op": "equals"
+        },
+        {
+          "path": "payment_terms.due_in_days",
+          "expected": 30,
+          "source_page": 5,
+          "op": "equals"
+        },
+        {
+          "path": "payment_terms.day_basis",
+          "expected": "unspecified",
+          "source_page": 5,
+          "op": "equals"
+        },
+        {
+          "path": "renewal_terms.renewal_type",
+          "expected": "manual",
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "renewal_terms.renewal_period",
+          "expected": null,
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "renewal_terms.period_unit",
+          "expected": null,
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "renewal_terms.non_renewal_notice_days",
+          "expected": null,
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "amendments.0.amendment_date",
+          "expected": "2026-06-15",
+          "source_page": 8,
+          "op": "equals"
+        },
+        {
+          "path": "amendments.0.effective_date",
+          "expected": "2026-07-01",
+          "source_page": 8,
+          "op": "equals"
+        }
+      ]
+    },
+    {
+      "id": "FAC-002",
+      "pdf": "data/FAC-002-guarding.pdf",
+      "contract_type": "service_agreement",
+      "checks": [
+        {
+          "path": "contract_id",
+          "expected": "FAC-002",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "customer",
+          "expected": "Cedar Retail Pvt Ltd",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "vendor",
+          "expected": "ShieldGate Security Solutions LLP",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "start_date",
+          "expected": "2025-04-01",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "end_date",
+          "expected": "2027-03-31",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "fees_and_pricing.currency",
+          "expected": "INR",
+          "source_page": 5,
+          "op": "equals"
+        },
+        {
+          "path": "execution_status.status",
+          "expected": "unclear",
+          "source_page": 8,
+          "op": "equals"
+        },
+        {
+          "path": "execution_status.signing_date",
+          "expected": null,
+          "source_page": 8,
+          "op": "equals"
+        },
+        {
+          "path": "liability_and_indemnity.cap_amount",
+          "expected": null,
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "liability_and_indemnity.cap_multiplier",
+          "expected": "2",
+          "source_page": 7,
+          "op": "money"
+        },
+        {
+          "path": "liability_and_indemnity.lookback_months",
+          "expected": 12,
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "assignment_and_subcontracting.assignment_allowed",
+          "expected": null,
+          "source_page": 4,
+          "op": "equals"
+        },
+        {
+          "path": "assignment_and_subcontracting.subcontracting_allowed",
+          "expected": true,
+          "source_page": 4,
+          "op": "equals"
+        },
+        {
+          "path": "assignment_and_subcontracting.consent_required",
+          "expected": true,
+          "source_page": 4,
+          "op": "equals"
+        },
+        {
+          "path": "fees_and_pricing.stated_total",
+          "expected": null,
+          "source_page": 5,
+          "op": "equals"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": "8820000",
+          "source_page": 5,
+          "op": "has_amount"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": "250000",
+          "source_page": 5,
+          "op": "has_amount"
+        },
+        {
+          "path": "renewal_terms.renewal_type",
+          "expected": "manual",
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "renewal_terms.non_renewal_notice_days",
+          "expected": null,
+          "source_page": 7,
+          "op": "equals"
+        },
+        {
+          "path": "payment_terms.due_in_days",
+          "expected": 30,
+          "source_page": 5,
+          "op": "equals"
+        },
+        {
+          "path": "payment_terms.day_basis",
+          "expected": "calendar",
+          "source_page": 5,
+          "op": "equals"
+        },
+        {
+          "path": "amendments.0.amendment_date",
+          "expected": "2026-03-20",
+          "source_page": 8,
+          "op": "equals"
+        },
+        {
+          "path": "amendments.0.effective_date",
+          "expected": "2026-04-01",
+          "source_page": 8,
+          "op": "equals"
+        }
+      ]
+    },
+    {
+      "id": "PRO-003",
+      "pdf": "data/PRO-003-peoplespring-store-staffing-services-master-agreement.pdf",
+      "contract_type": "service_agreement",
+      "checks": [
+        {
+          "path": "contract_id",
+          "expected": "PRO-003",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "customer",
+          "expected": "Cedar Retail Pvt Ltd",
+          "source_page": 2,
+          "op": "equals"
+        },
+        {
+          "path": "vendor",
+          "expected": "PeopleSpring Workforce Solutions Pvt Ltd",
+          "source_page": 2,
+          "op": "equals"
+        },
+        {
+          "path": "start_date",
+          "expected": "2024-04-01",
+          "source_page": 3,
+          "op": "equals"
+        },
+        {
+          "path": "end_date",
+          "expected": "2027-03-31",
+          "source_page": 3,
+          "op": "equals"
+        },
+        {
+          "path": "fees_and_pricing.currency",
+          "expected": "INR",
+          "source_page": 4,
+          "op": "equals"
+        },
+        {
+          "path": "fees_and_pricing.stated_total",
+          "expected": "7560000",
+          "source_page": 4,
+          "op": "money"
+        },
+        {
+          "path": "payment_terms.due_in_days",
+          "expected": 30,
+          "source_page": 4,
+          "op": "equals"
+        },
+        {
+          "path": "payment_terms.day_basis",
+          "expected": "unspecified",
+          "source_page": 4,
+          "op": "equals"
+        },
+        {
+          "path": "renewal_terms.renewal_type",
+          "expected": "manual",
+          "source_page": 3,
+          "op": "equals"
+        },
+        {
+          "path": "renewal_terms.non_renewal_notice_days",
+          "expected": 120,
+          "source_page": 3,
+          "op": "equals"
+        },
+        {
+          "path": "renewal_terms.notice_day_basis",
+          "expected": "calendar",
+          "source_page": 3,
+          "op": "equals"
+        },
+        {
+          "path": "liability_and_indemnity.cap_amount",
+          "expected": null,
+          "source_page": 6,
+          "op": "equals"
+        },
+        {
+          "path": "liability_and_indemnity.lookback_months",
+          "expected": 12,
+          "source_page": 6,
+          "op": "equals"
+        },
+        {
+          "path": "execution_status.status",
+          "expected": "executed",
+          "source_page": 8,
+          "op": "equals"
+        },
+        {
+          "path": "execution_status.signing_date",
+          "expected": "2024-04-01",
+          "source_page": 8,
+          "op": "equals"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": "2400000",
+          "source_page": 4,
+          "op": "has_amount"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": "2520000",
+          "source_page": 4,
+          "op": "has_amount"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": "2640000",
+          "source_page": 4,
+          "op": "has_amount"
+        },
+        {
+          "path": "fees_and_pricing.fees",
+          "expected": [
+            "7560000",
+            "950",
+            "1450"
+          ],
+          "source_page": 4,
+          "op": "no_amounts"
+        }
+      ]
+    },
+    {
+      "id": "EMP-001",
+      "pdf": "data/EMP-001-aarav-mehta-employment-agreement.pdf",
+      "contract_type": "employment_contract",
+      "checks": [
+        {
+          "path": "contract_id",
+          "expected": "EMP-001",
+          "source_page": 1,
+          "op": "equals"
+        },
+        {
+          "path": "employee",
+          "expected": "Aarav Mehta",
+          "source_page": 2,
+          "op": "name"
+        },
+        {
+          "path": "employer",
+          "expected": "Cedar Retail Pvt Ltd",
+          "source_page": 2,
+          "op": "name"
+        },
+        {
+          "path": "start_date",
+          "expected": "2026-10-01",
+          "source_page": 3,
+          "op": "equals"
+        },
+        {
+          "path": "end_date",
+          "expected": "2027-09-30",
+          "source_page": 3,
+          "op": "equals"
+        },
+        {
+          "path": "employment_terms.job_title",
+          "expected": "Retail Operations Analytics Manager",
+          "source_page": 2,
+          "op": "equals"
+        },
+        {
+          "path": "employment_terms.employment_type",
+          "expected": "fixed_term",
+          "source_page": 3,
+          "op": "equals"
+        },
+        {
+          "path": "employment_terms.reporting_to",
+          "expected": "Head of Retail Operations",
+          "source_page": 2,
+          "op": "equals"
+        },
+        {
+          "path": "compensation.currency",
+          "expected": "INR",
+          "source_page": 4,
+          "op": "equals"
+        },
+        {
+          "path": "compensation.annual_ctc",
+          "expected": "1500000",
+          "source_page": 4,
+          "op": "money"
+        },
+        {
+          "path": "probation.duration",
+          "expected": 3,
+          "source_page": 3,
+          "op": "equals"
+        },
+        {
+          "path": "probation.unit",
+          "expected": "months",
+          "source_page": 3,
+          "op": "equals"
+        },
+        {
+          "path": "execution_status.status",
+          "expected": "unsigned",
+          "source_page": 8,
+          "op": "equals"
+        },
+        {
+          "path": "execution_status.signing_date",
+          "expected": null,
+          "source_page": 8,
+          "op": "equals"
+        },
+        {
+          "path": "termination_terms.rules",
+          "expected": [
+            15,
+            60
+          ],
+          "source_page": 7,
+          "op": "has_notice_days"
+        },
+        {
+          "path": "compensation",
+          "expected": [
+            {
+              "base_salary": "50000",
+              "salary_period": "monthly"
+            },
+            {
+              "base_salary": "600000",
+              "salary_period": "annual"
+            }
+          ],
+          "source_page": 4,
+          "op": "salary_pair"
+        }
+      ]
+    }
+  ]
+}

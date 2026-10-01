@@ -1,0 +1,9 @@
+[project]
+name = "contract-processing-agent"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["strands-agents[openai]==1.57.1", "pydantic==2.13.5", "pypdf==6.19.0", "python-dotenv==1.2.2", "fastapi>=0.115,<1", "uvicorn>=0.34,<1", "python-multipart>=0.0.20,<1"]
+[dependency-groups]
+dev = ["pytest>=8,<10", "httpx>=0.28,<1"]
+[tool.pytest.ini_options]
+pythonpath = ["."]

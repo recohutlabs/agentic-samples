@@ -1,0 +1,56 @@
+{
+  "contracts": 5,
+  "classification_passed": 5,
+  "checks_per_stage": 118,
+  "extraction_passed": 118,
+  "verification_passed": 118,
+  "improved": 0,
+  "regressed": 0,
+  "errors": 0,
+  "decision": "pass_focused_suite",
+  "model": "gpt-6-luna",
+  "repetitions": 1,
+  "suite_sha256": "c86668f534568b153bf3523f8c15f5c59a8d5c449e7d69e1fc7847beb1eba297",
+  "cases": [
+    {
+      "id": "FAC-001",
+      "pdf": "data/FAC-001-cleaning.pdf",
+      "pdf_sha256": "4d86ad70fdb82243c1f9097f6089acd0402422d5b532ed7f9c621403c1a2f8c9",
+      "actual_type": "service_agreement",
+      "classification_passed": true,
+      "remaining_failures": []
+    },
+    {
+      "id": "FAC-003",
+      "pdf": "data/FAC-003-hvac.pdf",
+      "pdf_sha256": "a08aae208cd169bd64e06675e62851e428a4683fb315aa04f1d96bc96a8b3511",
+      "actual_type": "service_agreement",
+      "classification_passed": true,
+      "remaining_failures": []
+    },
+    {
+      "id": "FAC-002",
+      "pdf": "data/FAC-002-guarding.pdf",
+      "pdf_sha256": "dfc15a3cc7078c88eb44b8511897f264bfb70f67b94334375fdafedd2a2d9cba",
+      "actual_type": "service_agreement",
+      "classification_passed": true,
+      "remaining_failures": []
+    },
+    {
+      "id": "PRO-003",
+      "pdf": "data/PRO-003-peoplespring-store-staffing-services-master-agreement.pdf",
+      "pdf_sha256": "745677f31852c4f24fe77ad10acf5843dddcbbaf5848ca8c686e549a86b97057",
+      "actual_type": "service_agreement",
+      "classification_passed": true,
+      "remaining_failures": []
+    },
+    {
+      "id": "EMP-001",
+      "pdf": "data/EMP-001-aarav-mehta-employment-agreement.pdf",
+      "pdf_sha256": "5b200505b77ba56ed1b06053a8eda29a992d08367cea67b7d97e9f82115f7570",
+      "actual_type": "employment_contract",
+      "classification_passed": true,
+      "remaining_failures": []
+    }
+  ]
+}

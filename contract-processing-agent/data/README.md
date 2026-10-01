@@ -1,0 +1,1 @@
+All PDFs here are fictional contracts created for this reference implementation. Names, contact details, signatures and obligations are synthetic. They are not executed real-world agreements. The five-case evaluation checks selected fields only.
