@@ -14,10 +14,10 @@ Requires Python 3.11+ and [uv](https://docs.astral.sh/uv/). From this sample dir
 uv sync
 ```
 
-Create `.env` locally (never commit credentials):
+Create `.env` locally (never commit credentials). Set `OPENAI_API_KEY` in `.env` to your key before running:
 
 ```dotenv
-OPENAI_API_KEY=your-api-key
+OPENAI_API_KEY=
 OPENAI_MODEL=your-supported-model-id
 ```
 
