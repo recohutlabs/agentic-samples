@@ -53,6 +53,6 @@ class Store:
         with self.connect() as db:db.execute('UPDATE jobs SET status=?,contract_id=?,error=?,updated_at=? WHERE id=?',(status,contract_id,json.dumps(error) if error else None,now(),id))
     def save_contract(self,id,data,name,sha):
         with self.connect() as db:
-            db.execute('INSERT INTO contracts VALUES(?,?,?,?,?,?,?,?,?,?,?)',(id,data.get('contract_id'),data.get('contract_type'),data.get('customer') or data.get('employer'),data.get('vendor') or data.get('employee'),data.get('start_date'),data.get('end_date'),name,sha,json.dumps(data),now()))
+            db.execute('INSERT INTO contracts(id,contract_id,contract_type,customer,vendor,start_date,end_date,source_name,source_sha256,parsed,created_at) VALUES(?,?,?,?,?,?,?,?,?,?,?)',(id,data.get('contract_id'),data.get('contract_type'),data.get('customer') or data.get('employer'),data.get('vendor') or data.get('employee'),data.get('start_date'),data.get('end_date'),name,sha,json.dumps(data),now()))
     def message(self,conversation,role,content,contract,metadata=None):
         with self.connect() as db:db.execute('INSERT INTO messages(conversation_id,role,content,contract_id,created_at,metadata) VALUES(?,?,?,?,?,?)',(conversation,role,content,contract,now(),json.dumps(metadata) if metadata else None))
